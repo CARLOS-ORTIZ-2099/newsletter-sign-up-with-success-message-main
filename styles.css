@@ -1,0 +1,248 @@
+:root{
+    --primary-tomato :hsl(4, 100%, 67%);
+    --primary-dark-slate-grey : hsl(234, 29%, 20%);
+    --primary-charcoal-grey : hsl(235, 18%, 26%);
+    --primary-grey :  hsl(231, 7%, 60%);
+    --primary-white : hsl(0, 0%, 100%) ;
+}
+
+/* ### Primary
+
+- Tomato: hsl(4, 100%, 67%)
+
+### Neutral
+
+- Dark Slate Grey: hsl(234, 29%, 20%)
+- Charcoal Grey: hsl(235, 18%, 26%)
+- Grey: hsl(231, 7%, 60%)
+- White: hsl(0, 0%, 100%) */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    background-color: var(--primary-charcoal-grey);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.section-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 1.5rem;
+  /*   border: solid cyan 3px; */
+    margin:  auto;
+    background-color: var(--primary-white);
+    border-radius: 30px;
+}
+
+.banner{
+ /*    border: solid tomato 2px; */
+}
+
+/* .data-form{
+    border: solid #eee 2px;
+}
+ */
+.data-child{
+    /* border: solid red 2px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+
+}
+
+
+.text-container{
+    /* border: solid green 2px; */
+    margin-top: 0px;
+    width: 90%;
+}
+
+.text-container h1{
+    text-align: center;
+    color: var(--primary-dark-slate-grey);
+    /* border: solid red 1px; */
+    font-size: 50px;
+    
+}
+
+.text-container p{
+    margin-top: 20px;
+}
+
+
+.list-container{
+   /*  border: solid green 2px; */
+    width: 90%;
+   
+    
+}
+
+.list-container .unorder-list li {
+    list-style: none;
+   /*  margin:  20px ; */
+   margin-left: -29px;
+   margin-bottom: 20px;
+}
+
+
+
+.form-container{
+   /*  border: solid green 2px; */
+    width: 90%;
+}
+
+.form-container .form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    
+}
+
+.form-container .form input{
+    height: 45px;
+    border-radius: 7px;
+    margin-top: 7px;
+}
+
+.form-container .form .submit{
+    background-color: var(--primary-dark-slate-grey);
+    color: wheat;
+    margin-top: 30px;
+}
+
+.form-container .form .submit:hover{
+    background-color: var(--primary-tomato);
+    /* color: white; */
+    cursor: pointer;
+}
+
+.form-container .form .labels{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.hidden{
+    visibility: hidden;
+    transition: all ease-in-out .5s;
+}
+
+.error{
+    background-color: rgb(240, 222, 222);
+    color: red;
+    border: solid red 1px;
+    font-weight: bold;
+}
+
+.hidden-label{
+    display: none;
+}
+.label-error{
+    display: block;
+    color: red;
+}
+
+.hidden-modal{
+    background-color: rgba(0, 0, 0, .5);
+    color: aliceblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    transition:  all ease-in-out .5s;
+   /*  height: 110%; */
+
+}
+
+.modal{
+    border: solid red 1px;
+    text-align: center;
+    height: 350px;
+    background-color: var(--primary-white);
+    color: var(--primary-charcoal-grey);
+    font-weight: bolder;
+    border-radius: 20px;
+    width: 40%;
+    padding: 1rem;
+    
+}
+
+.hidden-modal .dissmis-button{
+    background-color: var(--primary-charcoal-grey);
+    height: 50px;
+    width: 80%;
+    border-radius: 10px;
+    color: var(--primary-white);
+}
+
+.hidden-modal .dissmis-button:hover{
+    cursor: pointer;
+}
+.hidden-modal p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.hidden-modal h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:550px) {
+    .section-container{
+        flex-wrap: wrap;
+        padding: 0;
+        min-height: 100vh;
+        margin: auto;
+    }
+
+    .banner img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .banner {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .text-container h1{
+        font-size: 40px;
+        margin-top: 10px;
+        
+    }
+    .text-container p{
+        margin-bottom: 25px;
+    }
+
+    .modal{
+        border: solid red 1px;
+        text-align: center;
+        height: 350px;
+        background-color: var(--primary-white);
+        color: var(--primary-charcoal-grey);
+        font-weight: bolder;
+        border-radius: 20px;
+        width: 90%;
+        padding: 1rem;
+        
+    }
+    
+
+}
+

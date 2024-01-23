@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+
+<!--  
+  -->
+
+<main class="main-container">
+
+    <section class="section-container">
+        <div class="banner">
+            <picture>
+               <!-- Imagen para pantallas grandes (mayores a 700px) -->
+              <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width: 700px)">
+              <!-- Imagen para pantallas pequeñas (700px o menos) -->
+              <img src="./assets/images/illustration-sign-up-mobile.svg" alt="Illustration for sign-up">
+            </picture>
+           
+        </div>
+
+        <div class="data-form">
+           <div class="data-child">
+              <div class="text-container">
+                <h1>Stay updated!</h1>
+                <p> Join 60,000+ product managers receiving monthly updates on:</p>
+              </div>
+              <div class="list-container">
+                <ul class="unorder-list">
+                  <li><span><img src="./assets/images/icon-list.svg" alt=""></span> Product discovery and building what matters</li>
+                  <li><span><img src="./assets/images/icon-list.svg" alt=""></span> Measuring to ensure updates are a success</li>
+                  <li><span><img src="./assets/images/icon-list.svg" alt=""></span>And much more!</li>
+                </ul>
+              </div>
+
+              <div class="form-container">
+                <form class="form" action="" novalidate>
+                  <div class="labels">
+                    <label for="email">Email address</label>
+                    <span class="hidden-label">valid email required</span>
+                  </div>
+                  <input name="email" class="email" id="email" type="email" placeholder="email@company.com">
+                  <input class="submit" type="submit" value="Subscribe to monthly newsletter">
+              </form>
+              </div>
+           </div>
+        </div>
+       
+    </section>
+
+   
+</main>
+
+<div class="hidden-modal hidden">
+    <div class="modal">
+      <img src="./assets/images/icon-list.svg" alt="">
+        <h2> Thanks for subscribing!</h2>
+        <p> 
+        </p>
+        <button class="dissmis-button"> Dismiss message</button>
+    </div>
+</div>
+
+
+
+  <!-- Success message end -->
+  
+<!--   <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+<script src="index.js"></script>
+
+</body>
+</html>
